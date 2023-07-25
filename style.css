@@ -1,3 +1,63 @@
+:root {
+
+  /* colors */
+  --clr-primary: hsla(0, 0%, 100%, 1);
+
+  --clr-accent-1:hsla(239, 62%, 15%, 1);
+  --clr-accent-2:hsla(240, 57%, 25%, 1);
+  --clr-accent-3: hsla(219, 60%, 40%, 1);
+  --clr-accent-4:hsla(240, 49%, 36%, 1);
+  --clr-accent-5:hsla(290, 65%, 63%, 1);
+
+  /* FW */
+  --fw-regular: 400;  /* body & button */
+  --fw-semi-bold: 500; /* nav & copyright */
+  --fw-bold: 700;   /* titles */
+
+  /* FS */
+
+
+
+
+
+
+  
+  --fs-navbar-500:1.0625rem;
+  --fs-cpoyright-500:0.9375rem;
+
+  --fs-button-400:1.0625rem;
+  --fs-body-400:1.0625;
+
+  --fs-contact-400:0.9375rem;
+  --fs-footer-400:1.0625rem;
+
+  --fs-title-700:3.75rem;
+  --fs-h2-700:1.25rem;
+  --fs-read-700:1.0625;
+  
+  --fs-proj-title-700:1.875rem;
+  --fs-proj-subtitle-700:1.5rem;
+
+  /* --fs-300: 0.8125rem;
+  --fs-400: 0.875rem;
+  --fs-500: 0.9375rem;
+  --fs-600: 1rem;
+  --fs-700: 1.875rem;
+  --fs-800: 2.5rem;
+  --fs-900: 3.5rem; */
+
+  --ff-primary:'Poppins', sans-serif;
+  /* --font-family-default:'Poppins', sans-serif; */
+
+  
+  /* Typo */
+  --ff-body: var(--ff-primary);
+  --ff-heading: var(--ff-primary);
+
+  /* linear gradients */
+
+
+}
 /* :root {
   --clr-accent-500: hsl(12, 60%, 45%);
   --clr-accent-400: hsl(12, 88%, 59%);
@@ -8,23 +68,6 @@
 
   --clr-neutral-900: hsl(232, 12%, 13%);
   --clr-neutral-100: hsl(0, 0%, 100%);
-
-  --ff-primary: "Be Vietnam Pro", sans-serif;
-
-  --ff-body: var(--ff-primary);
-  --ff-heading: var(--ff-primary);
-
-  --fw-regular: 400;
-  --fw-semi-bold: 500;
-  --fw-bold: 700;
-
-  --fs-300: 0.8125rem;
-  --fs-400: 0.875rem;
-  --fs-500: 0.9375rem;
-  --fs-600: 1rem;
-  --fs-700: 1.875rem;
-  --fs-800: 2.5rem;
-  --fs-900: 3.5rem;
 
   --fs-body: var(--fs-400);
   --fs-primary-heading: var(--fs-800);
@@ -43,9 +86,8 @@
   }
 } */
 
-/* / https://piccalil.li/blog/a-modern-css-reset */
+/* RESET : https://piccalil.li/blog/a-modern-css-reset */
 
-/* kp :always a good thing */
 /* Box sizing rules */
 *,
 *::before,
@@ -53,9 +95,6 @@
   box-sizing: border-box;
 }
 
-/* kp : now i like to remove all the margins 
-which i like doing */
-/* he prefers to : */
 /* Remove default margin */
 * {
   margin: 0;
@@ -63,17 +102,14 @@ which i like doing */
   font: inherit;
 }
 
-/* he keeps this */
-/* Remove list styles on ul, ol elements 
-with a list role, which suggests default 
+/* Remove list styles on ul, ol elements with a list role, which suggests default 
 styling will be removed */
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role="list"],
 ol[role="list"] {
   list-style: none;
 }
 
-/* he keeps this */
+/* à chercher */
 /* Set core root defaults */
 html:focus-within {
   scroll-behavior: smooth;
@@ -92,6 +128,7 @@ body {
   line-height: 1.5;
 }
 
+/* à chercher */
 /* A elements that don't have a class get 
 default styles */
 a:not([class]) {
@@ -206,17 +243,6 @@ not to see them */
   margin-inline: auto;
 }
 
-.even-columns {
-  display: grid;
-  gap: 1rem;
-}
-
-@media (min-width: 50em) {
-  .even-columns {
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
-  }
-}
 
 /* general styling */
 
@@ -224,136 +250,4 @@ body {
   font-size: var(--fs-body);
   font-family: var(--ff-body);
   color: var(--clr-primary-400);
-}
-
-/* button */
-
-.button {
-  cursor: pointer;
-  text-decoration: none;
-  border: 0;
-  border-radius: 100vmax;
-  padding: 1.25em 2.5em;
-  font-weight: var(--fw-bold);
-  font-size: var(--fs-button);
-  line-height: 1;
-  color: var(--clr-neutral-100);
-  background-color: var(--clr-accent-400);
-  box-shadow: 0 1.125em 1em -1em var(--clr-accent-500);
-}
-
-.button[data-type="inverted"] {
-  background-color: var(--clr-neutral-100);
-  color: var(--clr-accent-400);
-}
-
-.button:hover,
-.button:focus-visible {
-  background-color: var(--clr-accent-300);
-}
-
-.button[data-type="inverted"]:hover,
-.button[data-type="inverted"]:focus-visible {
-  background-color: var(--clr-neutral-100);
-  color: var(--clr-accent-300);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* / https://piccalil.li/blog/a-modern-css-reset */
-
-/* kp :always a good thing */
-/* Box sizing rules */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/* kp : now i like to remove all the margins 
-which i like doing */
-/* he prefers to : */
-/* Remove default margin */
-* {
-  margin: 0;
-  padding: 0;
-  font: inherit;
-}
-
-/* he keeps this */
-/* Remove list styles on ul, ol elements 
-with a list role, which suggests default 
-styling will be removed */
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role="list"],
-ol[role="list"] {
-  list-style: none;
-}
-
-/* he keeps this */
-/* Set core root defaults */
-html:focus-within {
-  scroll-behavior: smooth;
-}
-
-html,
-body {
-  height: 100%;
-}
-
-/* this can bring some issues, 
-so now they're fixed it's good to keep  */
-/* Set core body defaults */
-body {
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
-}
-
-/* A elements that don't have a class get 
-default styles */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-}
-
-/* Make images easier to work with */
-img,
-picture,
-svg {
-  max-width: 100%;
-  display: block;
-}
-
-/* to keep for accessibility */
-/* Remove all animations, transitions 
-and smooth scroll for people that prefer 
-not to see them */
-@media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-    scroll-behavior: auto;
-  }
-
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
 }
