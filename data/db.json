@@ -1,0 +1,106 @@
+  
+{  "Projets" : [
+  {
+    "id": "1",
+    "mission": "Développer le front-end de leur nouvelle plateforme web",
+    "title":"Créez une application web de location immobilière avec React",
+    "name":"KASA",
+    "cover": "https://i.ibb.co/85mV41M/Kasa2.png",
+    "pictures": [
+      "https://i.ibb.co/85mV41M/Kasa1.png",
+      "https://i.ibb.co/gtM8dB4/Kasa2.png",
+      "https://i.ibb.co/yqWxnfB/KasaMob1.png",
+      "https://i.ibb.co/w7hGZVV/KasaMob2.png"
+    ],
+    "specifications": "Pas de librairie React externe",
+    "tags": [
+      "ReactJS",
+      "Sass"
+    ],
+    "github":"",
+    "site":"https://647e17f3c573c90783e7be27--creative-dieffenbachia-f011c3.netlify.app/logement/c67ab8a7"
+  },
+  {
+    "id": "2",
+    "mission": "Développer le back-end pour construire l'API",
+    "title":"Construisez une API sécurisée pour une application d'avis gastronomiques",
+    "name":"HOT-TAKES",
+    "cover": "https://i.ibb.co/37ZZ9Gh/Hot-Takes1.png",
+    "pictures": [
+      "https://i.ibb.co/37ZZ9Gh/Hot-Takes1.png",
+      "https://i.ibb.co/VLszScy/Hot-Takes2.png",
+      "https://i.ibb.co/Vg2tbz6/Hot-Takes-Mob1.png"
+    ],
+    "specifications": "Le front-end de l'application a été développé à l'aide d'Angular",
+    "techno": [
+      "NodeJS",
+      "MongoDB",
+      "Express",
+      "Mongoose"
+    ],
+    "github":"",
+    "site":""
+  },
+  {
+    "id": "3",
+    "mission": "Intégrer des éléments dynamiquement grâce à JS et l'API",
+    "title":"Construisez un site e-commerce en JavaScript",
+    "name":"KANAP",
+    "cover": "https://i.ibb.co/9vSdDyN/Kanap1.png",
+    "pictures": [
+      "https://i.ibb.co/9vSdDyN/Kanap1.png",
+      "https://i.ibb.co/Cm4RktT/Kanap2.png",
+      "https://i.ibb.co/SntJd3T/Kanap3.png",
+      "https://i.ibb.co/99w1S4W/Kanap4.png",
+      "https://i.ibb.co/L8f8hYP/Kanap-Mob1.png"
+    ],
+    "specifications": "Utilisation de code JavaScript pur.Pas de framework ou librairie autorisé",
+    "techno": [
+      "JavaScript"
+    ],
+    "github":"",
+    "site":""
+  },
+  {
+    "id": "4",
+    "mission": "Améliorer le référencement et l'accessibilité",
+    "title":"Optimisez un site web existant",
+    "name":"LA PANTHERE",
+    "cover": "https://i.ibb.co/9vSdDyN/Kanap1.png",
+    "pictures": [
+      "https://i.ibb.co/9vSdDyN/Kanap1.png",
+      "https://i.ibb.co/Cm4RktT/Kanap2.png",
+      "https://i.ibb.co/SntJd3T/Kanap3.png",
+      "https://i.ibb.co/99w1S4W/Kanap4.png",
+      "https://i.ibb.co/L8f8hYP/Kanap-Mob1.png"
+    ],
+    "specifications": "Le site doit mieux classé dans les moteurs de recherche",
+    "techno": [
+      "axe DevTools",
+      "wave",
+      "headingsMap",
+      "color Contrast Analyzer"
+    ],
+    "github":"",
+    "site":""
+  },
+  {
+    "id": "5",
+    "mission": "Développer un site 100% mobile qui répertorie les menus de 4 restaurants gastronomiques à Paris",
+    "title":"Dynamisez une page web avec des animations CSS",
+    "name":"OH MY FOOD",
+    "cover": "https://i.ibb.co/CWq2DB2/oh-My-Food1.png",
+    "pictures": [
+      "https://i.ibb.co/CWq2DB2/oh-My-Food1.png",
+      "https://i.ibb.co/m0HKCGc/oh-My-Food2.png",
+      "https://i.ibb.co/VBNQjDN/oh-My-Food-Mob1.png",
+      "https://i.ibb.co/nftNsgs/oh-My-Food-Mob2.png"
+    ],
+    "specifications": "Le développement devra se faire en CSS, sans JavaScript",
+    "techno": [
+      "Sass"
+    ],
+    "github":"",
+    "site":""
+  } 
+]}

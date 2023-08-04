@@ -1,47 +1,220 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chay's</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    
-    <header class="primary-header">
-      <div class="container">
-        <a href="#"><img src="" alt=""></a>
-        <nav class="primary-navigation">
-          <ul aria-label="Primary" role="list" class="nav-list">
-            <li><a href="#">Projets</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chay's</title>
+
+  <link rel="stylesheet" href="sass/style.scss">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="homepage-header">
+    <div class="container">
       
+      <div class="nav-wrapper">
+
+        <button 
+        class="mobile-nav-toggle" 
+        aria-controls="primary-navigation" 
+        aria-expanded="false">
+          <span class="visually-hidden">Menu</span>
+        </button>
+
+        <nav class="navigation" id="navigation">
+          <ul aria-label="primary" role="list" class="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Me</a></li>
+            <li class="logo"><a href="#"><img src="assets/icons/Logo-name.svg" alt="logo"/></a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
         </nav>
-        <button class="button">Contact</button>
-      </div>
-    </header>
-  
-    <main>
-      <section>
-      </section>
 
-      </section>
-      </section>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+
+      <div class="container">
+
+        <div class="hero-content">
+
+          <div>
+
+            <h1 class="hero-content__primary-heading">
+              Bring everyone together to build better products.
+            </h1>
+
+            <p>
+              Manage makes it simple for software teams to plan day-to-day
+              tasks while keeping the larger team goals in view.
+            </p>
+
+          </div>
+
+            <div class="hero-content__button">
+              <button type="submit" class="button--contact">Contact me</button>
+              <button type="submit" class="button--cv">Download CV</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section class="projects">
+
+      <div class="container">
+
+        <div class="projects-heading">
+          <h2 class="secondary-heading">Projets</h2>
+        </div>
+
+        <!-- Carousel here -->
+        <div class="projects-content">
+
+          <ul class="projects-content__cards">
+
+            <li class="card">
+              <div>
+                <img src="assets/projects/Kasa1.png" alt="" />
+              </div>
+              <div class="card-content">
+                <h3>Kasa</h3>
+                <p data-width="wide">
+                  Créez une application web de location immobilière avec React
+                </p>
+              </div>
+              <div class="card__buttons">
+                <button class="butto--site">Site</button>
+                <button class="button--code">Code</button>
+              </div>
+            </li>
+           
+            <li class="card">
+              <div>
+                <img src="assets/projects/Kasa1.png" alt="" />
+              </div>
+              <div class="card-content">
+                <h3>Hot-Takes</h3>
+                <p data-width="wide">
+                  Construisez une API sécurisée pour une application d'avis gastronomiques
+                </p>
+              </div>
+              <div class="card-buttons">
+                <button class="button">Site</button>
+                <button class="button">Code</button>
+              </div>
+            </li>
+
+            <li class="card">
+              <div>
+                <img src="assets/projects/Kasa1.png" alt="" />
+              </div>
+              <div class="card-content">
+                <h3>OhMyFood</h3>
+                <p data-width="wide">
+                  Dynamisez une page web avec des animations CSS
+                </p>
+              </div>
+              <div class="card-buttons">
+                <button class="button site">Site</button>
+                <button class="button code">Code</button>
+              </div>
+            </li>
+
+          </ul>
+          
+        </div>
+      </div>
+    </section>
+
+
+    <section class="about">
+      <div class="container">
+
+        <div class="about-title">
+          <h2>🌟 Bienvenue sur mon profil 🌟</h2>
+        </div>
+
   
-      <section>
-      </section>
-    </main>
-  
-    <footer>
-    </footer>
-  
-        <script type="module" src="/main.js"></script>
-  </body>
+        <div class="about-content">                                                                                                                                          
+            <p>
+              🔧 Autodidacte invétérée et adepte du système D, je trouve
+              toujours la solution adaptée pour mener à bien mes projets, tout
+              en jonglant avec des responsabilités diverses grâce à mes
+              expériences dans des petites structures.
+            </p>
+
+            <p>
+              🌈 Je suis une personne sociable, enthousiaste, discrète, adepte
+              de l'esprit d'équipe et de la bienveillance. Pour moi, la
+              compétitivité entre collègues est un gros "no-no". Alors, prêt.e à
+              travailler ensemble sur ton prochain projet web ? 🚀🌟
+            </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-form">
+      <div class="container">
+        <form
+          method="POST"
+          action="https://getform.io/f/a699a1b2-f225-434e-b317-1fbbde8e006c"
+        >
+          <div class="contact-header">
+            <h2>Contact</h2>
+            <p>
+              Contactez moi soit via le formulaire ci-dessous soit directement par
+              mail - chaimaa.asri@gmail.com
+            </p>
+          </div>
+          <input
+            class="contact-name"
+            type="text"
+            placeholder="Name"
+            name="name"
+          />
+          <input
+            class="contact-email"
+            type="email"
+            placeholder="Email"
+            name="email"
+          />
+          <textarea
+            class="contact-message"
+            name="message"
+            rows="10"
+            placeholder="Message"
+          ></textarea>
+          <button class="contact-button">Envoyer un message</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="container">
+        <!-- <LogoFooter /> -->
+      </div>
+      <div>
+        <p>© 2023. All rights reserved</p>
+      </div>
+  </div>
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
 </html>

@@ -1,0 +1,135 @@
+@use "../base/base" as base;
+
+/* header */
+
+.homepage-header{
+  border:2px solid red;
+
+  padding-top: 2rem;
+  /* padding-top: var(--size-700); */
+}
+
+/* navigation */
+.nav-wrapper{
+  border:1px solid blue;
+
+  display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // gap:6.25rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-nav-toggle{
+  display: none;
+}
+
+
+
+
+
+.nav-list{
+  display: flex;
+  align-items: center;
+
+  font-size: 1.0625rem;
+  // gap: clamp(var(--size-400), 5vw, var(--size-700));
+  font-weight: 500;
+  gap:6.25rem;
+}
+
+.nav-list .logo img{
+  border:1px solid green;
+
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-list a:hover,
+.nav-list a:focus {
+  color:hsla(290, 65%, 63%, 1);
+}
+
+.visually-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+}
+
+@media (max-width: 47em) {
+  .homepage-header[data-overlay]{
+    position: relative;
+    z-index: 999;
+  }
+  .navigation {
+    display: none;
+    position: fixed;
+    padding: 3rem;
+    inset: 7rem 0.875rem auto;
+    max-width: 25rem;
+    margin-inline: auto;
+    background: white;
+    border-radius: 0.25rem;
+  }
+
+  .homepage-header[data-overlay]::before {
+    content: "";
+    position: fixed;
+
+    inset: 0;
+    height: 100vh;
+    /* background-image: linear-gradient(rgb(0 0 0 / 0), rgb(0 0 0 / 0.8)); */
+  }
+
+
+  .navigation[data-visible] {
+    display: block;
+  }
+
+  .mobile-nav-toggle {
+    border:2px solid red;
+
+    display: block;
+    position: fixed;
+    top: 0.4rem;
+    right: 2rem;
+    cursor: pointer;
+    background: transparent;
+    // border: 0;
+    padding: 0.5em;
+    width: 1.8rem;
+    aspect-ratio: 1;
+    background-image: url("assets/images/icon-hamburger.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .mobile-nav-toggle[aria-expanded="true"]  {
+    background-image: url("assets/images/icon-close.svg");
+  }
+  .nav-list{
+
+    display: flex;
+    flex-direction: column;
+    color: red;
+  }    
+  .nav-list a{
+    color:red;
+
+  }   
+  .nav-list .logo{
+    display: none;
+  
+  }
+}

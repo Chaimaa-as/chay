@@ -1,0 +1,35 @@
+{
+  "Projets": [
+    {
+      "title": "Kasa",
+      "cover": "https://i.ibb.co/85mV41M/Kasa2.png",
+      "body": "lorem ipsum...",
+      "author": "Projets avec OpenClassrooms",
+      "techno": "ReactJS et Sass",
+      "id": "1"
+    },
+    {
+      "title": "Hot Takes",
+      "cover": "https://i.ibb.co/37ZZ9Gh/Hot-Takes1.png",
+      "body": "lorem ipsum...",
+      "author": "Projets avec OpenClassrooms",
+      "techno": "NodeJS, Express, MongoDB (MERN)",
+      "id": "2"
+    },
+    {
+      "title": "Kanap",
+      "cover": "https://i.ibb.co/9vSdDyN/Kanap1.png",
+      "body": "lorem ipsum...",
+      "author": "Projets avec OpenClassrooms",
+      "techno": "JavaScript",
+      "id": "3"
+    },
+    {
+      "title": "Cat memory game",
+      "body": "lorem ipsum...",
+      "author": "Chaïmaa",
+      "techno": "ReactJS et Sass",
+      "id": "4"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+ /*hero /BLOBS*/
+  
+//  @media (max-width:50em){
+//     .hero__image{
+//       // order:-1;
+//     }
+//   }
+  
+//   .hero__image::before{
+//     content:"";
+//     position: absolute;
+//     z-index:-1;
+//     right:0;
+//     left:0;
+//     top:0;
+//     width:85%;
+  
+//     max-height:70vh;
+//     max-height:70dvh;
+//     /* dynamic viewport heightit will call either one that's working */
+  
+//     aspect-ratio: 1 / 1.2;
+//     background-image: url("../../assets/illustrations/home/Illustration\ top.svg");
+//     background-repeat: no-repeat;
+//     background-position: bottom left;
+//   }
+  
+//   @media (max-width:47em){
+//     .hero__image::before{
+//       width:45%;
+//     }
+//   }

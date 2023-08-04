@@ -1,0 +1,26 @@
+/* sales-points */
+// .sales-points__blob{
+//     position: relative;
+//   }
+  
+//   .sales-points__blob::before {
+//     content:url("images/bg-tablet-pattern.svg");
+//     zoom:40%;
+//     position: absolute;
+//     z-index:-1;
+//     left:70%;
+//     bottom:120%;
+//     /* it's easier with a top on an absolute */
+//     width:100px;
+//   }
+  
+//   @media (min-width:47em) {
+//     .sales-points__blob::before{
+//       zoom:70%;
+//       z-index:-1;
+//       left:-500px;
+//       top:42%;
+//       /* it's easier with a top on an absolute */
+//       width:100px;
+//     }
+//   }
