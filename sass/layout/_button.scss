@@ -1,85 +1,71 @@
 /* button */
 
 .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  border-radius: 1.875rem;
+  cursor: pointer;
+  text-decoration: none;  
+    
+  border: 0;
+  padding: 1.25em 1.6em;
+  font-weight: 400;
+  font-size: 1.0625rem;
+  line-height: 1;
 
+  color:white;
+  box-shadow: 0 1.125em 1em -1em hsl(239, 62%, 15%);
+  
+}
+.button--contact,
+.button--site{
+  background: rgba(255, 255, 255, 0.30);
+  backdrop-filter: blur(11.575666427612305px);
+}
+.button--cv {
+  color:white;
 
+  border-radius: 1.875rem;
+  background: linear-gradient(169deg, #C961DE 0%, #2954A3 100%);
+}
 
-    justify-content: center;
-    align-items: center;
-    
-    border-radius: 1.875rem;
-    
-    
-    
-    
-      display: inline-flex;
-      cursor: pointer;
-      text-decoration: none;
-      border: 0;
-      border-radius: 100vmax;
-      padding: 1.25em 1.6em;
-      font-weight: 400;
-      /* font-weight: var(--fw-bold); */
-      font-size: 1.0625rem;
-      /* font-size: var(--fs-button); */
-      line-height: 1;
-      color:white;
-      /* color: var(--clr-neutral-100); */
-    
-      box-shadow: 0 1.125em 1em -1em hsl(239, 62%, 15%);
-      /* box-shadow: 0 1.125em 1em -1em var(--clr-accent-500); */
-    }
-    .button .contact{
-    
-    
-      background: rgba(255, 255, 255, 0.30);
-    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.15);
-    backdrop-filter: blur(11.575666427612305px);
-    }
-    .button .cv,
-    .contact-button{
-      color:white;
-    
-      border-radius: 1.875rem;
-    background: linear-gradient(169deg, #C961DE 0%, #2954A3 100%);
-    box-shadow: 0px 10px 20px 0px rgba(8, 12, 33, 0.15);
-    }
-    
-    .button[data-type="inverted"] {
-      background-color: white;
-      /* background-color: var(--clr-neutral-100); */
-      color: hsl(240, 57%, 25%);
-      /* color: var(--clr-accent-400); */
-    }
-    
-    .button[data-shadow="none"] {
-      box-shadow: none;
-    }
-    
-    .button:hover,
-    .button:focus-visible {
-      /* background-color: hsl(219, 60%, 40%); */
-      /* background-color: var(--clr-accent-300); */
-    }
-    
-    .button[data-type="inverted"]:hover,
-    .button[data-type="inverted"]:focus-visible {
-      background-color:  hsl(240, 57%, 25%);
-      /* background-color: var(--clr-accent-400); */
-      /* background-color: var(--clr-neutral-100); */
-      color: hsl(219, 60%, 40%);
-      /* color: var(--clr-accent-300); */
-    }
+.button[data-type="inverted"] {
+  background-color: white;
+  color: hsl(240, 57%, 25%);
+}
 
-    .card-buttons .button .site{
-      border-radius: 1.875rem;
-      background: rgba(255, 255, 255, 0.30);
-      box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.15);
-      backdrop-filter: blur(11.575666427612305px);
-    }
-    
-    .card-buttons .bouton .code{
-      border-radius: 1.875rem;
-      background: linear-gradient(169deg, #C961DE 0%, #2954A3 100%);
-      box-shadow: 0px 10px 20px 0px rgba(8, 12, 33, 0.15);
-    }
+.button[data-shadow="none"] {
+  box-shadow: none;
+}
+
+.button:hover,
+.button:focus-visible {
+  background-color: hsl(219, 60%, 40%);
+}
+
+.button[data-type="inverted"]:hover,
+.button[data-type="inverted"]:focus-visible {
+  background-color:  hsl(240, 57%, 25%);
+  color: hsl(219, 60%, 40%);
+}
+
+.button--site{
+  border-radius: 1.875rem;
+  background: rgba(255, 255, 255, 0.30);
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(11.575666427612305px);
+}
+
+.button--code{
+  border-radius: 1.875rem;
+  background: linear-gradient(169deg, #C961DE 0%, #2954A3 100%);
+  box-shadow: 0px 10px 20px 0px rgba(8, 12, 33, 0.15);
+}
+
+.hero-content__button{
+  display: flex;
+  gap:1rem;
+  justify-content: center;
+}

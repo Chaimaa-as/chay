@@ -1,8 +1,27 @@
-.about .container{
+.about-wrapper{
     display: flex;
-  width: 39.375rem;
-  justify-content: center;
-  align-items: center;
-  border-radius: 21.875rem;
-  background: linear-gradient(144deg, #C961DE 0%, #2954A3 100%);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+
+    padding: 12rem 1rem;
+    border-radius: 62%;
+    
+    width: 39.375rem;
+    border-radius: 21.875rem;
+    background: linear-gradient(144deg, #C961DE 0%, #2954A3 100%);
+  }
+
+  .about-title{
+    font-weight: 700;
+  }
+
+  .about-content p{
+    font-weight: 400;
+  }
+
+  .about-content p span{
+    font-weight: 700;
+
   }

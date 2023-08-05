@@ -1,7 +1,7 @@
 /* general styling */
 body {
   min-height: 100vh;
-  font-size: 1,06825rem;
+  font-size: 1.06825rem;
   font-family: "Poppins", sans-serif;;
   color: hsl(0, 0%, 100%);
   background-color: hsl(239, 62%, 15%);
@@ -28,6 +28,7 @@ max-width: 42ch;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom:6rem;
 }
 
 .even-columns {

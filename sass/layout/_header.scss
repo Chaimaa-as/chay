@@ -3,16 +3,13 @@
 /* header */
 
 .homepage-header{
-  border:2px solid red;
-
   padding-top: 2rem;
   /* padding-top: var(--size-700); */
+
 }
 
 /* navigation */
 .nav-wrapper{
-  border:1px solid blue;
-
   display: flex;
   // justify-content: center;
   // align-items: center;
@@ -25,10 +22,6 @@
   display: none;
 }
 
-
-
-
-
 .nav-list{
   display: flex;
   align-items: center;
@@ -37,11 +30,6 @@
   // gap: clamp(var(--size-400), 5vw, var(--size-700));
   font-weight: 500;
   gap:6.25rem;
-}
-
-.nav-list .logo img{
-  border:1px solid green;
-
 }
 
 .nav-list a {
@@ -104,7 +92,7 @@
     top: 0.4rem;
     right: 2rem;
     cursor: pointer;
-    background: transparent;
+    // background: transparent;
     // border: 0;
     padding: 0.5em;
     width: 1.8rem;

@@ -1,7 +1,45 @@
+.projects{
+  padding-bottom: 2rem;
+}
+
+
+
+.project-card{
+  border-radius:1.3rem;
+  -webkit-box-shadow: -1px 5px 10px 0px rgba(138,134,134,0.75);
+  min-width:40%;
+
+  background-color:rgba(181, 249, 253, 0.42);
+  background-image: url("../../assets/projects/Kasa1.png");
+  // background-repeat: no-repeat;
+  background-size: cover;
+  color:red;
+
+background-blend-mode: multiply;
+// background-blend-mode: lighten;
+
+  // don't use height on images! BIG FAN of using padding to create that spacing because padding  PREFER padding for spacing
+// BECAUSE THE PADDING WILL ALWAYS INCLUDE YOUR BACKGROUND COLOR OR YOUR BACKGROUND IMAGE
+  padding-top:100px;
+  padding-bottom:100px;
+}
+
+
+.card-container{
+  max-width:27.5rem;
+  margin-left:auto;
+  margin-right:auto;
+  padding-left:1rem;
+  padding-right:1rem;
+
+
+}
+
+
 
 .projects-content__cards{
   display: flex;
-
+  justify-content: center;
 
 }
 
@@ -15,46 +53,136 @@
   position: relative;
 
 
-/* padding: 0.8125rem 2.83813rem 4.3125rem 2.8125rem; */
-justify-content: center;
-align-items: center;
-border-radius: 1.875rem;
-background: rgba(181, 249, 253, 0.42);
-backdrop-filter: blur(10px);
-}
-
-/* .card::before{
-  content:"";
-  position: absolute;
-  height:4rem;
-  width:3rem;
-
-  background-color: red;
-
-  display: flex;
+  /* padding: 0.8125rem 2.83813rem 4.3125rem 2.8125rem; */
   justify-content: center;
   align-items: center;
-  border-radius:0.2rem;
+  border-radius: 1.875rem;
+  background: rgba(181, 249, 253, 0.42);
+  backdrop-filter: blur(10px);
+}
 
-} */
+
+// .card img{
+//   width:100%;
+//   height:100%;
+//   /* min-height:300px; */
+//   border:2px solid blue;
+
+//   position: relative;
+// }
+
+// .card-content{
+//   border:2px solid cyan;
+
+// }
+
+// .card-buttons{
+//   border:2px solid greenyellow;  
+//   /* background-color:  hsl(240, 57%, 25%); */
+//   /* background-color: var(--clr-accent-400); */
+// }
+
+// ____________________________________________________
 
 
-.card img{
-  width:100%;
-  height:100%;
-  /* min-height:300px; */
-  border:2px solid blue;
-
+.project-card{
   position: relative;
+  display:block;
+  width: 8.5rem;
+      &::before{
+      content:"Blabla";
+      position: absolute;
+      height:2rem;
+      width:6rem;
+      color:blue;
+      background-color: greenyellow;
+      top:2rem;
+      right:2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius:0.2rem;
+      }
 }
 
-.card-content{
-  border:2px solid cyan;
+.project-card--vedette{
+  background-color: white;
+  border-radius:1.3rem;
+  -webkit-box-shadow: -1px 5px 10px 0px rgba(138,134,134,0.75);
+  min-width:40%;
 
+  background-color:rgba(181, 249, 253, 0.42);
+  background-image: url("../../assets/projects/Kasa1.png");
+  // background-repeat: no-repeat;
+  background-size: cover;
+  color:black;
+  background-blend-mode: multiply;
+  // background-blend-mode: lighten;
+
+  // don't use height on images! BIG FAN of using padding to create that spacing because padding  PREFER padding for spacing
+  // BECAUSE THE PADDING WILL ALWAYS INCLUDE YOUR BACKGROUND COLOR OR YOUR BACKGROUND IMAGE
+  padding-top:100px;
+  padding-bottom:100px;
+
+  // position:relative;
 }
+// .img--card{
+//   width:100%;
+//   height:10rem;
+//   border-radius: 1.3rem 1.3rem 0rem 0rem;
+//   object-fit: cover;
+// }
 
-.card-buttons{
-  border:2px solid greenyellow;  
-  /* background-color:  hsl(240, 57%, 25%); */
-  /* background-color: var(--clr-accent-400); */
+.card-container{
+  padding:0.2rem 1rem;
+  text-overflow: ellipsis;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  & p{
+      margin-top:0.2rem;
+      }
+      &::before{
+          display:inline-block;
+          font-style: normal;
+          font-variant: normal;
+          text-rendering: auto;
+          -webkit-font-smoothing: antialiased;
+          font-family: "Font Awesome 5 Free"; 
+          font-weight: 400; 
+          content:"";
+          font-size:2rem;
+          position:absolute;
+          right:1rem;
+          transform:translate(-50%);
+          color:inherit;
+          background-clip:text;
+          -webkit-background-clip: text;
+          opacity:1;
+          transition: all 200ms ease-in-out;   
+          }
+          &::after{
+              display:inline-block;
+              font-style: normal;
+              font-variant: normal;
+              text-rendering: auto;
+              -webkit-font-smoothing: antialiased;
+              font-family: "Font Awesome 5 Free"; 
+              font-weight: 900; 
+              content:"";
+              font-size:2rem;
+              position:absolute;
+              right:1rem;
+              transform:translate(-50%);
+              color:transparent;
+              background: linear-gradient(to right bottom, #ff79d9, #e96eda, #d064db, #b35cdc, #9356dc);
+              background-clip:text;
+              -webkit-background-clip: text;
+              opacity:0;
+              transition: all 200ms ease-in-out;    
+              }
+                  &:hover::after{
+                      opacity:1;
+                  }
 }
